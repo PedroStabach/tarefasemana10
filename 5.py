@@ -1,12 +1,12 @@
-numeros = []
-pares = []
-impares = []
+
+pares = 0
+impares = 0
 for i in range(10):
     numero = int(input(f"selecione o {(i + 1)} numero: "))
     numeros.append(numero)
     if numero % 2 == 0:
-        pares.append(numero)
+        pares += 1
     else:
-        impares.append(numero)
+        impares += 1
 
 print(f"sao pares: {pares}, impares: {impares}")

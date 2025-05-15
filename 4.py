@@ -1,9 +1,9 @@
-idades = int(input("quantas idades voce deseja? "))
-totalIdades = []
-media = 0
-for i in range(idades):
-    idade = int(input("escreva a idade desejada"))
-    totalIdades.append(idade) 
-    media += totalIdades[i]
-media = media / idades
-print(f"a media 'e {media}")
+idades = [0] * 5
+soma = 0
+
+for i in range(5):
+    idades[i] = int(input("Digite a idade: "))
+    soma += idades[i]
+media = soma / 5
+
+print(f"A média das idades é {media}")
